@@ -22,7 +22,10 @@ Vagrant.configure("2") do |config|
       vb.memory = "1024"
     end
 
+    config.vm.network "forwarded_port", guest: 4200, host: 4200
+
     config.vm.provision "shell", path: "scripts/install_docker.sh", privileged: false
+    config.vm.provision "shell", path: "scripts/install_java.sh", privileged: false
   
 
  #vagrant.vm.provision "shell", path: "scripts/installDocker.sh", privileged: false
