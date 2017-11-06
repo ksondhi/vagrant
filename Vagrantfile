@@ -24,6 +24,7 @@ Vagrant.configure("2") do |config|
 
     config.vm.network "forwarded_port", guest: 4200, host: 4200
 
+    config.vm.provision "shell", path: "scripts/get_user_info.sh", privileged: false
     config.vm.provision "shell", path: "scripts/install_certificates.sh", privileged: false
     config.vm.provision "shell", path: "scripts/install_docker.sh", privileged: false
     config.vm.provision "shell", path: "scripts/install_java.sh", privileged: false
