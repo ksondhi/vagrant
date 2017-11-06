@@ -30,6 +30,8 @@ Vagrant.configure("2") do |config|
     config.vm.provision "shell", path: "scripts/install_node.sh", privileged: false
     config.vm.provision "shell", path: "scripts/install_tomcat.sh", privileged: false
     config.vm.provision "shell", path: "scripts/configure_git.sh", privileged: false
+    config.vm.provision "shell", path: "scripts/install_oracle_docker_image.sh", privileged: false
+    config.vm.provision "shell", path: "scripts/install_chrome.sh", privileged: false
   
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
