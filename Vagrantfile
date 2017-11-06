@@ -26,6 +26,9 @@ Vagrant.configure("2") do |config|
 
     config.vm.provision "shell", path: "scripts/install_docker.sh", privileged: false
     config.vm.provision "shell", path: "scripts/install_java.sh", privileged: false
+    config.vm.provision "shell", path: "scripts/install_node.sh", privileged: false
+    config.vm.provision "shell", path: "scripts/install_tomcat.sh", privileged: false
+    config.vm.provision "shell", path: "scripts/configure_git.sh", privileged: false
   
 
  #vagrant.vm.provision "shell", path: "scripts/installDocker.sh", privileged: false

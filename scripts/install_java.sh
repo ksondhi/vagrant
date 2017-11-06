@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Installing Java 7 ..."
+echo "Installing Java 8 ..."
 sudo apt-get install -y python-software-properties debconf-utils
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt-get update
