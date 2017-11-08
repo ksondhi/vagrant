@@ -15,7 +15,7 @@ sudo apt-get install -y docker-ce
 sudo systemctl status docker
 
 # Setup to allow executing Docker command without sudo
-sudo usermod -aG docker vagrant
-su - vagrant
+sudo usermod -a -G docker $USER
+su - $USER
 id -nG
 

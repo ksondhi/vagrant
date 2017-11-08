@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-"Installing Docker image with Oracle..."
-docker pull oraclelinux
-docker run -dit oraclelinux
-docker ps
+echo "Installing Docker image with Oracle..."
+sudo docker pull oraclelinux
+sudo docker run -dit oraclelinux
+sudo docker ps
